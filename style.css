@@ -1,3 +1,8 @@
+@media {
+}
+ {
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -82,7 +87,7 @@ header h1 span {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 20px;
   padding: 50px;
   background-color: #222831;
@@ -136,9 +141,9 @@ header h1 span {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 20px;
-  padding: 50px;
+  padding: 0px 50px;
   background-color: #222831;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   color: white;
@@ -152,6 +157,7 @@ header h1 span {
 .container-img-journey {
   flex: 1;
   max-width: 400px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,10 +168,13 @@ header h1 span {
   max-width: 600px;
 }
 
+.container-section-journey p {
+  font-size: 1.2rem;
+}
+
 .container-journey img {
-  width: 100%;
+  width: 400px;
   height: auto;
-  border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   filter: grayscale(100);
 }
@@ -173,20 +182,18 @@ header h1 span {
 /* main-record */
 .main-record {
   background-color: #222831;
-  padding: 0px 40px;
+  padding: 0px 60px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-
-  max-width: 1200px;
 }
 
 .main-record h2,
 .main-journey h2 {
   font-size: 2.5rem;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   color: white;
   font-family: "Georgia", serif;
-  padding-top: 50px;
+  padding-top: 8rem;
 }
 
 .main-record > div {
@@ -204,7 +211,7 @@ header h1 span {
 }
 
 .main-record p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   color: #eeeeee;
   text-align: justify;
@@ -213,14 +220,14 @@ header h1 span {
 
 .main-record div img {
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
   max-height: 18rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .main-record > div > div:first-child {
-  flex: 2;
+  flex: 1;
   max-width: 600px;
 }
 
@@ -244,10 +251,16 @@ header h1 span {
   justify-content: center;
 }
 
+.container-record {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 50px;
+}
+
 /* contact section */
 .contact-section {
   background-color: #222831;
-  padding: 50px 20px;
+  padding: 70px 20px;
 }
 
 .container-contact {
@@ -373,11 +386,11 @@ header h1 span {
   display: flex;
   justify-content: start;
   align-items: center;
-  padding: 10px 50px;
+  padding: 10px 80px;
   background-color: #222831;
   color: #fff;
   font-size: 16pt;
-  gap: 10px;
+  gap: 15px;
 }
 
 .divider-full {
@@ -385,4 +398,79 @@ header h1 span {
   background-color: #ffd369;
   width: 100%;
   border-radius: 2px;
+}
+
+@media (min-width: 1812px) {
+  header h1 {
+    font-size: 6rem;
+  }
+
+  .main1 h1,
+  .contact-header h2,
+  .header-journey h2,
+  .header-record h2 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    padding-top: 7rem;
+  }
+
+  .main1 p,
+  .container-section-journey p,
+  .container-record p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+
+  .container-section-journey h3,
+  .container-record h3 {
+    font-size: 2.3rem;
+  }
+
+  .container-img-journey,
+  .container-img-journey img,
+  .main1 img {
+    width: 700px;
+    background-color: #eeeeee;
+  }
+
+  .main-record div img {
+    width: 100%;
+    max-width: 700px;
+    max-height: 32rem;
+
+    nav a {
+      font-size: 24pt;
+    }
+  }
+
+  .container-contact {
+    max-width: 1600px;
+  }
+
+  .contact-info {
+    max-width: 40em;
+  }
+
+  .form-group label {
+    font-size: 1.6rem;
+  }
+
+  .info-item i {
+    font-size: 4rem;
+  }
+
+  .info-item a,
+  .info-item span {
+    font-size: 1.6rem;
+  }
+
+  .btn-submit {
+    font-size: 1.5rem;
+  }
+}
+
+.footer-container {
+  padding: 10px 80px;
+  font-size: 22pt;
+  gap: 15px;
 }
