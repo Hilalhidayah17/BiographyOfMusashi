@@ -203,7 +203,8 @@ header h1 span {
   gap: 20px;
 }
 
-.main-record h3 {
+.main-record h3,
+.container-section-journey h3 {
   font-size: 1.8rem;
   margin-bottom: 15px;
   color: #eeeeee;
