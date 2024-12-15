@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Navigasi */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background-color: #222831;
+  color: #fff;
+  font-size: 16pt;
+  position: sticky;
+  top: 0px;
+  z-index: 19;
+  gap: 200px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+  font-size: 14px;
+  font-size: 16pt;
+  transition-duration: 300ms;
+  border-bottom: 1.5px solid #ffd26900;
+}
+
+nav a:hover {
+  border-bottom: 1.5px solid #ffd369;
+  padding-bottom: 5px;
+}
+
+/* Header */
+#header-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 80vh;
+  background-image: url("./picture/myamoto-header.jpeg");
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(0);
+}
+
+.header-content {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.header-content h2 {
+  font-family: "EB Garamond", serif;
+}
+
+header h1 {
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+
+header h1 span {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.years {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+/* Main1 */
+
+.main1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 50px;
+  background-color: #222831;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main1 div:first-child {
+  flex: 1;
+  max-width: 600px;
+}
+
+.main1 h1 {
+  font-size: 2.5rem;
+  color: #eeeeee;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: "Georgia", serif;
+}
+
+.main1 p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: white;
+  font-family: "Arial", sans-serif;
+  text-align: justify;
+}
+
+.main1 div:last-child {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+}
+
+.main1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  filter: grayscale(100);
+}
+
+/*  Journey */
+.main-journey {
+  background-color: #222831;
+  color: white;
+}
+.container-journey {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 50px;
+  background-color: #222831;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.header-journey > h2 {
+  background-color: #222831;
+  color: white;
+}
+
+.container-img-journey {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222831;
+}
+.container-section-journey {
+  flex: 1;
+  max-width: 600px;
+}
+
+.container-journey img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  filter: grayscale(100);
+}
+
+/* main-record */
+.main-record {
+  background-color: #222831;
+  padding: 0px 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  max-width: 1200px;
+}
+
+.main-record h2,
+.main-journey h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+  font-family: "Georgia", serif;
+  padding-top: 50px;
+}
+
+.main-record > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.main-record h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #eeeeee;
+  font-family: "Times New Roman", serif;
+}
+
+.main-record p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #eeeeee;
+  text-align: justify;
+  font-family: "Arial", sans-serif;
+}
+
+.main-record div img {
+  width: 100%;
+  max-width: 300px;
+  max-height: 18rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-record > div > div:first-child {
+  flex: 2;
+  max-width: 600px;
+}
+
+.main-record > div > div:last-child {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider {
+  margin: 20px 0;
+  height: 2px;
+  background-color: #ffd369;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.header-record {
+  display: flex;
+  justify-content: center;
+}
+
+/* contact section */
+.contact-section {
+  background-color: #222831;
+  padding: 50px 20px;
+}
+
+.container-contact {
+  max-width: 1100px;
+  margin: 40px auto;
+  background-color: #eeeeee;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+}
+
+/* Header Styling */
+.contact-header {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.contact-header h2 {
+  font-size: 2rem;
+  color: #222831;
+}
+
+/* Contact Content Layout */
+.contact-content {
+  display: flex;
+  gap: 30px;
+}
+
+/* Left Section: Form */
+.contact-form-wrapper {
+  flex: 1;
+}
+
+.contact-form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #222831;
+  outline: none;
+}
+
+.btn-submit {
+  align-self: flex-start;
+  background-color: #222831;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition-duration: 200ms;
+}
+
+.btn-submit:hover {
+  background-color: #ffd369;
+}
+
+/* Right Section: Contact Info */
+.contact-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: #ffd369;
+  padding: 20px;
+  border-radius: 8px;
+  height: fit-content;
+  margin-top: 1.4em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 20em;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.info-item i {
+  font-size: 3rem;
+  color: #222831;
+}
+
+.info-item span,
+.info-item a {
+  font-size: 1rem;
+  color: black;
+  text-decoration: none;
+  transition-duration: 20ms;
+}
+
+.info-item a:hover {
+  text-decoration: underline;
+  color: #eeeeee;
+}
+
+/* footer */
+.footer-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10px 50px;
+  background-color: #222831;
+  color: #fff;
+  font-size: 16pt;
+  gap: 10px;
+}
+
+.divider-full {
+  height: 2px;
+  background-color: #ffd369;
+  width: 100%;
+  border-radius: 2px;
+}
